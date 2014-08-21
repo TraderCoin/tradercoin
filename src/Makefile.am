@@ -15,11 +15,11 @@ endif
 bin_PROGRAMS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += fractalcoind
+  bin_PROGRAMS += tradercoind
 endif
 
 if BUILD_BITCOIN_CLI
-  bin_PROGRAMS += fractalcoin-cli
+  bin_PROGRAMS += tradercoin-cli
 endif
 
 SUBDIRS = . $(BUILD_QT)
@@ -165,36 +165,36 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
 #
 
-# fractalcoind binary #
-fractalcoind_LDADD = \
+# tradercoind binary #
+tradercoind_LDADD = \
   libbitcoin_server.a \
   libbitcoin_cli.a \
   libbitcoin_common.a \
   $(LIBLEVELDB) \
   $(LIBMEMENV)
 if ENABLE_WALLET
-fractalcoind_LDADD += libbitcoin_wallet.a libbitcoin_server_wallet.a
+tradercoind_LDADD += libbitcoin_wallet.a libbitcoin_server_wallet.a
 endif
-fractalcoind_SOURCES = fractalcoind.cpp
+tradercoind_SOURCES = tradercoind.cpp
 #
 
 if TARGET_WINDOWS
-fractalcoind_SOURCES += fractalcoind-res.rc
+tradercoind_SOURCES += tradercoind-res.rc
 endif
 
 AM_CPPFLAGS += $(BDB_CPPFLAGS)
-fractalcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
+tradercoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
 
-# fractalcoin-cli binary #
-fractalcoin_cli_LDADD = \
+# tradercoin-cli binary #
+tradercoin_cli_LDADD = \
   libbitcoin_cli.a \
   libbitcoin_common.a \
   $(BOOST_LIBS)
-fractalcoin_cli_SOURCES = fractalcoin-cli.cpp
+tradercoin_cli_SOURCES = tradercoin-cli.cpp
 #
 
 if TARGET_WINDOWS
-fractalcoin_cli_SOURCES += fractalcoin-cli-res.rc
+tradercoin_cli_SOURCES += tradercoin-cli-res.rc
 endif
 
 # NOTE: This dependency is not strictly necessary, but without it make may try to build both in parallel, which breaks the LevelDB build system in a race

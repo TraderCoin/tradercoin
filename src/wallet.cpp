@@ -1412,7 +1412,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64_t> >& vecSend,
                 // The following if statement should be removed once enough miners
                 // have upgraded to the 0.9 GetMinFee() rules. Until then, this avoids
                 // creating free transactions that have change outputs less than
-                // COIN fractalcoins.
+                // COIN tradercoins.
                 if (nFeeRet < CTransaction::nMinTxFee && nChange > 0 && nChange < COIN)
                 {
                     int64_t nMoveToFee = min(nChange, CTransaction::nMinTxFee - nFeeRet);
@@ -1424,7 +1424,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64_t> >& vecSend,
                 {
                     // Fill a vout to ourself
                     // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-fractalcoin-address
+                    // change transaction isn't always pay-to-tradercoin-address
                     CScript scriptChange;
 
                     // coin control: send change to custom address

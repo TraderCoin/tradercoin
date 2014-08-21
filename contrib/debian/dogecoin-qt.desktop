@@ -1,12 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Fractalcoin
-Comment=Fractalcoin P2P Cryptocurrency
-Comment[fr]=Fractalcoin, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Fractalcoin, eşten eşe kriptografik sanal para birimi
-Exec=fractalcoin-qt %u
+Name=Tradercoin
+Comment=Tradercoin P2P Cryptocurrency
+Comment[fr]=Tradercoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Tradercoin, eşten eşe kriptografik sanal para birimi
+Exec=tradercoin-qt %u
 Terminal=false
 Type=Application
-Icon=fractalcoin128
-MimeType=x-scheme-handler/fractalcoin;
+Icon=tradercoin128
+MimeType=x-scheme-handler/tradercoin;
 Categories=Office;Finance;

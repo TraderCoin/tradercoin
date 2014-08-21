@@ -44,7 +44,7 @@ Value sendalert(const Array& params, bool fHelp)
     if (fHelp || params.size() != 2)
         throw runtime_error(
             "sendalert(text, private key) \n"
-            "Send alert message to the Fractalcoin network.");
+            "Send alert message to the Tradercoin network.");
     string strMessage;
     string sig;
     strMessage = params[0].get_str();
@@ -232,7 +232,7 @@ Value getaddednodeinfo(const Array& params, bool fHelp)
             "    \"connected\" : true|false,          (boolean) If connected\n"
             "    \"addresses\" : [\n"
             "       {\n"
-            "         \"address\" : \"192.168.0.201:22556\",  (string) The Fractalcoin server host and port\n"
+            "         \"address\" : \"192.168.0.201:22556\",  (string) The Tradercoin server host and port\n"
             "         \"connected\" : \"outbound\"           (string) connection, inbound or outbound\n"
             "       }\n"
             "       ,...\n"

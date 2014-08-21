@@ -1,14 +1,14 @@
-# Fractalcoin Core [FRAC]
+# Tradercoin Core [TRDR]
 ==========================
 
-![Fractalcoin](http://i.imgur.com/LCv2wcn.png)
+![Tradercoin](http://i.imgur.com/LCv2wcn.png)
 
-## What is Fractalcoin?
-Fractalcoin is a cryptocurrency like Bitcoin, although with many key differences. Fractalcoin's wallet is forked from Bitcoin 0.9.2, and thus has a build process slightly different from most altcoins.
+## What is Tradercoin?
+Tradercoin is a cryptocurrency like Bitcoin, although with many key differences. Tradercoin's wallet is forked from Bitcoin 0.9.2, and thus has a build process slightly different from most altcoins.
 
 ## Features
 
-The key features of Fractalcoin:
+The key features of Tradercoin:
 
 * X11 Proof of work (low power, cool hardware, ASIC resistant, etc)
 * One minute block times
@@ -21,10 +21,10 @@ The key features of Fractalcoin:
 * Small 0.5% premine
 
 
-http://fractalco.in/
+http://traderco.in/
 
 ## License
-Fractalcoin is released under the terms of the MIT license. See [COPYING](COPYING)
+Tradercoin is released under the terms of the MIT license. See [COPYING](COPYING)
 for more information or see http://opensource.org/licenses/MIT.
 
 ## Development and contributions
@@ -35,16 +35,16 @@ Development is ongoing and the development team as well as other volunteers can 
 
 The reward schedule is very fast and vigorous, in order to get the high rate of inflation out of the way as soon as possible.
 
-* 1st block:  5000 FRAC, premined for support and development
-* 2-31: 0 FRAC, zero reward blocks to allow for a fair launch with no instamining while difficulty catches up to network
-* 32-1471 (1 day): 40 FRAC, to spur excitement for the first day of mining
-* 1472-20191 (13 days): 20 FRAC
-* 20192-22500(~2 days): 10 FRAC
-* 22501-22860(6 hours): 20 FRAC bonus round for forking
-* 22861-38912(~11 days): 10 FRAC
-* 38913-40352(1 day): 40 FRAC, to give people that missed out on the first day of mining a final chance to get big blocks
-* 40353-318230(about 221 days): 1 FRAC (percentage based transaction fees should make it so that average reward is closer to 5-15 coins)
-* 318231 and up: 0 FRAC (again, percentage fees mean that significant rewards will still be seen)
+* 1st block:  5000 TRDR, premined for support and development
+* 2-31: 0 TRDR, zero reward blocks to allow for a fair launch with no instamining while difficulty catches up to network
+* 32-1471 (1 day): 40 TRDR, to spur excitement for the first day of mining
+* 1472-20191 (13 days): 20 TRDR
+* 20192-22500(~2 days): 10 TRDR
+* 22501-22860(6 hours): 20 TRDR bonus round for forking
+* 22861-38912(~11 days): 10 TRDR
+* 38913-40352(1 day): 40 TRDR, to give people that missed out on the first day of mining a final chance to get big blocks
+* 40353-318230(about 221 days): 1 TRDR (percentage based transaction fees should make it so that average reward is closer to 5-15 coins)
+* 318231 and up: 0 TRDR (again, percentage fees mean that significant rewards will still be seen)
 
 ## Slingshield
 
@@ -70,12 +70,12 @@ This helps to ensure Slingshield works as expected, ensures the network stays st
 
 ## Low inflation
 
-After 28 days, Fractalcoin's inflation rate drops to around 16%/year, and somewhere in that year, the inflation rate actually drops to zero. Fractalcoin's very fast schedule to zero inflation ensures that the price will stay stable, while percentage based transaction fees ensure that it will forever have a strong network.  
+After 28 days, Tradercoin's inflation rate drops to around 16%/year, and somewhere in that year, the inflation rate actually drops to zero. Tradercoin's very fast schedule to zero inflation ensures that the price will stay stable, while percentage based transaction fees ensure that it will forever have a strong network.  
 
 
-##  Building fractalcoind/fractalcoin-cli/fractalcoin-qt
+##  Building tradercoind/tradercoin-cli/tradercoin-qt
 
-  The following are developer notes on how to build Fractalcoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+  The following are developer notes on how to build Tradercoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
   - [OSX Build Notes](doc/build-osx.md)
   - [Unix Build Notes](doc/build-unix.md)

@@ -1,50 +1,50 @@
-Fractalcoin 1.7
+Tradercoin 1.7
 =====================
 
 * Copyright (c) 2009-2014 Bitcoin Developers
 * Copyright (c) 2011-2013 Litecoin Developers
-* Copyright (c) 2013-2014 Fractalcoin Developers
+* Copyright (c) 2013-2014 Tradercoin Developers
 
 
 Setup
 ---------------------
-[Fractalcoin Core](http://fractalcoin.com/en/download) is the original Fractalcoin client and it builds the backbone of the network. However, it downloads and stores the entire history of Fractalcoin transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Tradercoin Core](http://tradercoin.com/en/download) is the original Tradercoin client and it builds the backbone of the network. However, it downloads and stores the entire history of Tradercoin transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Fractalcoin on your native platform. 
+The following are some helpful notes on how to run Tradercoin on your native platform. 
 
 ### Unix
 
-You need the Qt4 run-time libraries to run Fractalcoin-Qt. On Debian or Ubuntu:
+You need the Qt4 run-time libraries to run Tradercoin-Qt. On Debian or Ubuntu:
 
 	sudo apt-get install libqtgui4
 
 Unpack the files into a directory and run:
 
-- bin/32/fractalcoin-qt (GUI, 32-bit) or bin/32/fractalcoind (headless, 32-bit)
-- bin/64/fractalcoin-qt (GUI, 64-bit) or bin/64/fractalcoind (headless, 64-bit)
+- bin/32/tradercoin-qt (GUI, 32-bit) or bin/32/tradercoind (headless, 32-bit)
+- bin/64/tradercoin-qt (GUI, 64-bit) or bin/64/tradercoind (headless, 64-bit)
 
 
 
 ### Windows
 
-Unpack the files into a directory, and then run fractalcoin-qt.exe.
+Unpack the files into a directory, and then run tradercoin-qt.exe.
 
 ### OSX
 
-Drag Fractalcoin-Qt to your applications folder, and then run Fractalcoin-Qt.
+Drag Tradercoin-Qt to your applications folder, and then run Tradercoin-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Fractalcoin Wiki](http://fractalco.in/)
+* See the documentation at the [Tradercoin Wiki](http://traderco.in/)
 for help and more information.
-* Ask for help on [#fractalcoin](http://webchat.freenode.net?channels=fractalcoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=fractalcoin).
-* Ask for help on the [/r/fractalducation subreddit](http://reddit.com/r/fractalducation).
+* Ask for help on [#tradercoin](http://webchat.freenode.net?channels=tradercoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=tradercoin).
+* Ask for help on the [/r/traderducation subreddit](http://reddit.com/r/traderducation).
 
 Building
 ---------------------
-The following are developer notes on how to build Fractalcoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Tradercoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -52,7 +52,7 @@ The following are developer notes on how to build Fractalcoin on your native pla
 
 Development
 ---------------------
-The Fractalcoin repo's [root README](https://github.com/fractalcoin/fractalcoin/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Tradercoin repo's [root README](https://github.com/tradercoin/tradercoin/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Coding Guidelines](coding.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -63,8 +63,8 @@ The Fractalcoin repo's [root README](https://github.com/fractalcoin/fractalcoin/
 - [Unit Tests](unit-tests.md)
 
 ### Resources
-* Discuss on the [/r/fractalcoindev](http://www.reddit.com/r/fractalcoindev) subreddit.
-* Discuss on [#fractalcoin-dev](http://webchat.freenode.net/?channels=fractalcoin-dev) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=fractalcoin-dev).
+* Discuss on the [/r/tradercoindev](http://www.reddit.com/r/tradercoindev) subreddit.
+* Discuss on [#tradercoin-dev](http://webchat.freenode.net/?channels=tradercoin-dev) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=tradercoin-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

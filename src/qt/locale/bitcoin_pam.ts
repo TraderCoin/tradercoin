@@ -3,12 +3,12 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Fractalcoin Core</source>
+        <source>About Tradercoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Fractalcoin Core&lt;/b&gt; version</source>
+        <source>&lt;b&gt;Tradercoin Core&lt;/b&gt; version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -31,7 +31,7 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="+0"/>
-        <source>The Fractalcoin Core developers</source>
+        <source>The Tradercoin Core developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -119,12 +119,12 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Fractalcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Reni reng kekang Fractalcoin address king pamagpadalang kabayaran. Lawan mulang masalese reng alaga ampo ing address na ning tumanggap bayu ka magpadalang barya.</translation>
+        <source>These are your Tradercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Reni reng kekang Tradercoin address king pamagpadalang kabayaran. Lawan mulang masalese reng alaga ampo ing address na ning tumanggap bayu ka magpadalang barya.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Fractalcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Tradercoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -245,8 +245,8 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FRACCOINS&lt;/b&gt;!</source>
-        <translation>Kapabaluan: Istung in-encrypt me ing kekang wallet at meala ya ing passphrase na, ma-&lt;b&gt;ALA NO NGAN RING KEKANG FRACCOINS&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TRDRCOINS&lt;/b&gt;!</source>
+        <translation>Kapabaluan: Istung in-encrypt me ing kekang wallet at meala ya ing passphrase na, ma-&lt;b&gt;ALA NO NGAN RING KEKANG TRDRCOINS&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -272,8 +272,8 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="-56"/>
-        <source>Fractalcoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Fractalcoins from being stolen by malware infecting your computer.</source>
-        <translation>Ing Fractalcoin ngeni magsara ya ban ayari ing proseso ning pamag-encrypt. Tandanan yu king pamag-encrypt wallet, ali nala aprotektan king kabuuan reng fractalcoins yu kareng malware a kasalunsungan atiu kareng computer yu.</translation>
+        <source>Tradercoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Tradercoins from being stolen by malware infecting your computer.</source>
+        <translation>Ing Tradercoin ngeni magsara ya ban ayari ing proseso ning pamag-encrypt. Tandanan yu king pamag-encrypt wallet, ali nala aprotektan king kabuuan reng tradercoins yu kareng malware a kasalunsungan atiu kareng computer yu.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -366,8 +366,8 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about Fractalcoin Core</source>
-        <translation>Ipakit ing impormasyun tungkul king Fractalcoin</translation>
+        <source>Show information about Tradercoin Core</source>
+        <translation>Ipakit ing impormasyun tungkul king Tradercoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -427,13 +427,13 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="-405"/>
-        <source>Send coins to a Fractalcoin address</source>
-        <translation>Magpadalang barya king Fractalcoin address</translation>
+        <source>Send coins to a Tradercoin address</source>
+        <translation>Magpadalang barya king Tradercoin address</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Fractalcoin Core</source>
-        <translation>Alilan ing pipamilian konpigurasion para keng Fractalcoin</translation>
+        <source>Modify configuration options for Tradercoin Core</source>
+        <translation>Alilan ing pipamilian konpigurasion para keng Tradercoin</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -462,8 +462,8 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="+430"/>
-        <source>Fractalcoin</source>
-        <translation>Fractalcoin</translation>
+        <source>Tradercoin</source>
+        <translation>Tradercoin</translation>
     </message>
     <message>
         <location line="-643"/>
@@ -498,12 +498,12 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Fractalcoin addresses to prove you own them</source>
+        <source>Sign messages with your Tradercoin addresses to prove you own them</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Fractalcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Tradercoin addresses</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -534,18 +534,18 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="-401"/>
-        <source>Fractalcoin Core</source>
-        <translation>Kapilubluban ning Fractalcoin</translation>
+        <source>Tradercoin Core</source>
+        <translation>Kapilubluban ning Tradercoin</translation>
     </message>
     <message>
         <location line="+163"/>
-        <source>Request payments (generates QR codes and fractalcoin: URIs)</source>
+        <source>Request payments (generates QR codes and tradercoin: URIs)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+29"/>
         <location line="+2"/>
-        <source>&amp;About Fractalcoin Core</source>
+        <source>&amp;About Tradercoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -560,7 +560,7 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a fractalcoin: URI or payment request</source>
+        <source>Open a tradercoin: URI or payment request</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -570,19 +570,19 @@ Ing produktung ini atin yang makayabeng software a gewa dareng OpenSSL Project p
     </message>
     <message>
         <location line="+1"/>
-        <source>Show the Fractalcoin Core help message to get a list with possible Fractalcoin Core command-line options</source>
+        <source>Show the Tradercoin Core help message to get a list with possible Tradercoin Core command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+159"/>
         <location line="+5"/>
-        <source>Fractalcoin client</source>
-        <translation>Fractalcoin client</translation>
+        <source>Tradercoin client</source>
+        <translation>Tradercoin client</translation>
     </message>
     <message numerus="yes">
         <location line="+142"/>
-        <source>%n active connection(s) to Fractalcoin network</source>
-        <translation><numerusform>%n ya ing aktibong koneksion keng Fractalcoin network</numerusform><numerusform>%n lareng aktibong koneksion keng Fractalcoin network</numerusform></translation>
+        <source>%n active connection(s) to Tradercoin network</source>
+        <translation><numerusform>%n ya ing aktibong koneksion keng Tradercoin network</numerusform><numerusform>%n lareng aktibong koneksion keng Tradercoin network</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -689,8 +689,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+438"/>
-        <source>A fatal error occurred. Fractalcoin Core can no longer continue safely and will quit.</source>
-        <translation>Atin kamalian a milyari. Ali ne magsilbing sumulung pa ing Fractalcoin at kailangan na ng tuknang.</translation>
+        <source>A fatal error occurred. Tradercoin Core can no longer continue safely and will quit.</source>
+        <translation>Atin kamalian a milyari. Ali ne magsilbing sumulung pa ing Tradercoin at kailangan na ng tuknang.</translation>
     </message>
 </context>
 <context>
@@ -1047,8 +1047,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Fractalcoin address.</source>
-        <translation>Ing pepalub yung address &quot;%1&quot; ali ya katanggap-tanggap a Fractalcoin address.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Tradercoin address.</source>
+        <translation>Ing pepalub yung address &quot;%1&quot; ali ya katanggap-tanggap a Tradercoin address.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1093,13 +1093,13 @@ Address: %4
     <name>HelpMessageDialog</name>
     <message>
         <location filename="../forms/helpmessagedialog.ui" line="+19"/>
-        <source>Fractalcoin Core - Command-line options</source>
+        <source>Tradercoin Core - Command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="+38"/>
-        <source>Fractalcoin Core</source>
-        <translation>Kapilubluban ning Fractalcoin</translation>
+        <source>Tradercoin Core</source>
+        <translation>Kapilubluban ning Tradercoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1151,17 +1151,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Fractalcoin Core.</source>
+        <source>Welcome to Tradercoin Core.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Fractalcoin Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Tradercoin Core will store its data.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+10"/>
-        <source>Fractalcoin Core will download and store a copy of the Fractalcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Tradercoin Core will download and store a copy of the Tradercoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1176,8 +1176,8 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+85"/>
-        <source>Fractalcoin</source>
-        <translation>Fractalcoin</translation>
+        <source>Tradercoin</source>
+        <translation>Tradercoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1252,13 +1252,13 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Fractalcoin Core after logging in to the system.</source>
-        <translation>Umpisan yang antimu ing Fractalcoin kaibat mekapag-log in king sistema.</translation>
+        <source>Automatically start Tradercoin Core after logging in to the system.</source>
+        <translation>Umpisan yang antimu ing Tradercoin kaibat mekapag-log in king sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Fractalcoin Core on system login</source>
-        <translation>&amp;Umpisan ya ing Fractalcoin king pamag-log-in na ning sistema.</translation>
+        <source>&amp;Start Tradercoin Core on system login</source>
+        <translation>&amp;Umpisan ya ing Tradercoin king pamag-log-in na ning sistema.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1287,7 +1287,7 @@ Address: %4
     </message>
     <message>
         <location line="+58"/>
-        <source>Connect to the Fractalcoin network through a SOCKS proxy.</source>
+        <source>Connect to the Tradercoin network through a SOCKS proxy.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1322,8 +1322,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Fractalcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ibuklat yang antimanu ing Fractalcoin client port king router. Gagana yamu ini istung ing router mu susuporta yang UPnP at magsilbi ya.</translation>
+        <source>Automatically open the Tradercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ibuklat yang antimanu ing Tradercoin client port king router. Gagana yamu ini istung ing router mu susuporta yang UPnP at magsilbi ya.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1392,8 +1392,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Fractalcoin Core.</source>
-        <translation>Ing amanu na ning user interface maliari yang i-ayus o ilage keni. Ing ayus a ini magsilbi yamu istung pesibayuan meng pasibayu ing Fractalcoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Tradercoin Core.</source>
+        <translation>Ing amanu na ning user interface maliari yang i-ayus o ilage keni. Ing ayus a ini magsilbi yamu istung pesibayuan meng pasibayu ing Tradercoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1407,8 +1407,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Fractalcoin addresses in the transaction list or not.</source>
-        <translation>Ipakit man ing Fractalcoin address king listahan naning transaksion o ali.</translation>
+        <source>Whether to show Tradercoin addresses in the transaction list or not.</source>
+        <translation>Ipakit man ing Tradercoin address king listahan naning transaksion o ali.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1482,8 +1482,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fractalcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Ing makaltong impormasion mapalyaring luma ne. Ing kekang wallet otomatiku yang mag-synchronize keng Fractalcoin network istung mekakonekta ne king network, oneng ing prosesung ini ali ya pa kumpletu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Tradercoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Ing makaltong impormasion mapalyaring luma ne. Ing kekang wallet otomatiku yang mag-synchronize keng Tradercoin network istung mekakonekta ne king network, oneng ing prosesung ini ali ya pa kumpletu.</translation>
     </message>
     <message>
         <location line="-155"/>
@@ -1552,7 +1552,7 @@ Address: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>URI can not be parsed! This can be caused by an invalid Fractalcoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Tradercoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1572,7 +1572,7 @@ Address: %4
     </message>
     <message>
         <location line="-353"/>
-        <source>Cannot start fractalcoin: click-to-pay handler</source>
+        <source>Cannot start tradercoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1641,8 +1641,8 @@ Address: %4
     <message>
         <location filename="../bitcoin.cpp" line="+71"/>
         <location line="+11"/>
-        <source>Fractalcoin</source>
-        <translation>Fractalcoin</translation>
+        <source>Tradercoin</source>
+        <translation>Tradercoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1812,8 +1812,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Fractalcoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ibuklat ing Fractalcoin debug log file menibat king kasalungsungan data directory. Magluat ya ining pilan segundu para kareng mamaragul a log files.</translation>
+        <source>Open the Tradercoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Ibuklat ing Tradercoin debug log file menibat king kasalungsungan data directory. Magluat ya ining pilan segundu para kareng mamaragul a log files.</translation>
     </message>
     <message>
         <location line="+76"/>
@@ -1822,8 +1822,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Fractalcoin Core RPC console.</source>
-        <translation>Malaus kayu king Fractalcoin RPC console.</translation>
+        <source>Welcome to the Tradercoin Core RPC console.</source>
+        <translation>Malaus kayu king Tradercoin RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1905,7 +1905,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Fractalcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Tradercoin network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2189,8 +2189,8 @@ Address: %4
     </message>
     <message>
         <location line="-136"/>
-        <source>Enter a Fractalcoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Magpalub kang Fractalcoin address(e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+        <source>Enter a Tradercoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Magpalub kang Tradercoin address(e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -2279,7 +2279,7 @@ Address: %4
     </message>
     <message>
         <location line="+112"/>
-        <source>Warning: Invalid Fractalcoin address</source>
+        <source>Warning: Invalid Tradercoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2381,7 +2381,7 @@ Address: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the Fractalcoin URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fractalcoin network.</source>
+        <source>A message that was attached to the Tradercoin URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Tradercoin network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2413,15 +2413,15 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Fractalcoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Magpalub kang Fractalcoin address(e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+        <source>Enter a Tradercoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Magpalub kang Tradercoin address(e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
 </context>
 <context>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+48"/>
-        <source>Fractalcoin Core is shutting down...</source>
+        <source>Tradercoin Core is shutting down...</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2491,8 +2491,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Fractalcoin address</source>
-        <translation>Pirman ing mensayi ban patune na keka ya ining Fractalcoin address</translation>
+        <source>Sign the message to prove you own this Tradercoin address</source>
+        <translation>Pirman ing mensayi ban patune na keka ya ining Tradercoin address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2527,8 +2527,8 @@ Address: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Fractalcoin address</source>
-        <translation>Beripikan ing mensayi ban asiguradu a me pirma ya ini gamit ing mepiling Fractalcoin address</translation>
+        <source>Verify the message to ensure it was signed with the specified Tradercoin address</source>
+        <translation>Beripikan ing mensayi ban asiguradu a me pirma ya ini gamit ing mepiling Tradercoin address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2543,8 +2543,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+29"/>
         <location line="+3"/>
-        <source>Enter a Fractalcoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Magpalub kang Fractalcoin address(e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+        <source>Enter a Tradercoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Magpalub kang Tradercoin address(e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2553,8 +2553,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Fractalcoin signature</source>
-        <translation>Ipalub ing pirma na ning Fractalcoin</translation>
+        <source>Enter Tradercoin signature</source>
+        <translation>Ipalub ing pirma na ning Tradercoin</translation>
     </message>
     <message>
         <location line="+84"/>
@@ -2627,12 +2627,12 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+28"/>
-        <source>Fractalcoin Core</source>
-        <translation>Kapilubluban ning Fractalcoin</translation>
+        <source>Tradercoin Core</source>
+        <translation>Kapilubluban ning Tradercoin</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>The Fractalcoin Core developers</source>
+        <source>The Tradercoin Core developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3200,7 +3200,7 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>fractalcoin-core</name>
+    <name>tradercoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+221"/>
         <source>Usage:</source>
@@ -3223,13 +3223,13 @@ Address: %4
     </message>
     <message>
         <location line="+22"/>
-        <source>Specify configuration file (default: fractalcoin.conf)</source>
-        <translation>Pilinan ing configuration file(default: fractalcoin.conf)</translation>
+        <source>Specify configuration file (default: tradercoin.conf)</source>
+        <translation>Pilinan ing configuration file(default: tradercoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: fractalcoind.pid)</source>
-        <translation>Pilinan ing pid file(default: fractalcoind.pid)</translation>
+        <source>Specify pid file (default: tradercoind.pid)</source>
+        <translation>Pilinan ing pid file(default: tradercoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -3306,13 +3306,13 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=fractalcoinrpc
+rpcuser=tradercoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Tradercoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3333,7 +3333,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Fractalcoin Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Tradercoin Core is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3378,8 +3378,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Fractalcoin Core will not work properly.</source>
-        <translation>Kapabaluan: Maliaring pakilawe ing oras at aldo a makalage king kekayung kompyuter nung istu la! Istung ing oras yu mali ya ali ya gumanang masalese ing Fractalcoin.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Tradercoin Core will not work properly.</source>
+        <translation>Kapabaluan: Maliaring pakilawe ing oras at aldo a makalage king kekayung kompyuter nung istu la! Istung ing oras yu mali ya ali ya gumanang masalese ing Tradercoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3413,12 +3413,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Fractalcoin Core Daemon</source>
+        <source>Tradercoin Core Daemon</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Fractalcoin Core RPC client version</source>
+        <source>Tradercoin Core RPC client version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3618,7 +3618,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to Fractalcoin Core server</source>
+        <source>Send command to Tradercoin Core server</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3638,7 +3638,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+2"/>
-        <source>Start Fractalcoin Core server</source>
+        <source>Start Tradercoin Core server</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3648,7 +3648,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+10"/>
-        <source>Usage (deprecated, use fractalcoin-cli):</source>
+        <source>Usage (deprecated, use tradercoin-cli):</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3913,13 +3913,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Fractalcoin Core</source>
-        <translation>Me-mali ya ing pamag-load na ning wallet.dat: Ing wallet mangailangan yang bayung bersion na ning Fractalcoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Tradercoin Core</source>
+        <translation>Me-mali ya ing pamag-load na ning wallet.dat: Ing wallet mangailangan yang bayung bersion na ning Tradercoin</translation>
     </message>
     <message>
         <location line="+98"/>
-        <source>Wallet needed to be rewritten: restart Fractalcoin Core to complete</source>
-        <translation>Ing wallet mangailangan yang misulat pasibayu: Umpisan yang pasibayu ing Fractalcoin ban ma-kumpleto ya</translation>
+        <source>Wallet needed to be rewritten: restart Tradercoin Core to complete</source>
+        <translation>Ing wallet mangailangan yang misulat pasibayu: Umpisan yang pasibayu ing Tradercoin ban ma-kumpleto ya</translation>
     </message>
     <message>
         <location line="-100"/>
@@ -3978,8 +3978,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="-32"/>
-        <source>Unable to bind to %s on this computer. Fractalcoin Core is probably already running.</source>
-        <translation>Eya megsilbing idikit king %s na ning kompyuter a ini. Mapaliaring mamandar ne ing Fractalcoin.</translation>
+        <source>Unable to bind to %s on this computer. Tradercoin Core is probably already running.</source>
+        <translation>Eya megsilbing idikit king %s na ning kompyuter a ini. Mapaliaring mamandar ne ing Tradercoin.</translation>
     </message>
     <message>
         <location line="+95"/>

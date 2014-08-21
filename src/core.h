@@ -18,7 +18,7 @@
 class CTransaction;
 
 /** No amount larger than this (in satoshi) is valid */
-static const int64_t MAX_MONEY = 100000 * COIN; // Fractalcoin: maximum of 100K coins, max transaction 100K
+static const int64_t MAX_MONEY = 100000 * COIN; // Tradercoin: maximum of 100K coins, max transaction 100K
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 
 /** An outpoint - a combination of a transaction hash and an index n into its vout */
@@ -158,7 +158,7 @@ public:
     }
     bool IsDust(uint64_t minRelayTxFee) const
     {
-        // Fractalcoin: IsDust() detection disabled, allows any valid dust to be relayed.
+        // Tradercoin: IsDust() detection disabled, allows any valid dust to be relayed.
         // The fees imposed on each dust txo is considered sufficient spam deterrant.
 		return (nValue < GetDustThreshold(minRelayTxFee));
     }

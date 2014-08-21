@@ -1,6 +1,6 @@
 [Protocol]
-exec=fractalcoin-qt '%u'
-protocol=fractalcoin
+exec=tradercoin-qt '%u'
+protocol=tradercoin
 input=none
 output=none
 helper=true

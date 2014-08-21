@@ -3,7 +3,7 @@
 // Copyright (c) 2011-2013 The Litecoin developers
 // Copyright (c) 2013-2014 The Dogecoin developers
 // Copyright (c)      2014 The Inutoshi developers
-// Copyright (c)      2014 The Fractalcoin developers
+// Copyright (c)      2014 The Tradercoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -33,7 +33,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "Fractalcoin cannot be compiled without assertions."
+# error "Tradercoin cannot be compiled without assertions."
 #endif
 
 //
@@ -77,7 +77,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Fractalcoin Signed Message:\n";
+const string strMessageMagic = "Tradercoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -720,7 +720,7 @@ int64_t GetMinFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree, 
 
     int64_t nMinFee = (1 + (int64_t)nBytes / 1000) * nBaseFee;
 
-    // Fractalcoin
+    // Tradercoin
     // To limit dust spam, add nBaseFee for each output less than DUST_SOFT_LIMIT
     BOOST_FOREACH(const CTxOut& txout, tx.vout)
         if (txout.nValue < DUST_SOFT_LIMIT)
@@ -734,7 +734,7 @@ int64_t GetMinFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree, 
         however, this would require you owning the address, so shouldn't probably matter anyway. 
         if someone wants to avoid fees that strongly, they can mine a block themselves even or arrange for a pool to
         */
-        // fractalcoin percentage fee implementation
+        // tradercoin percentage fee implementation
         BOOST_FOREACH(const CTxOut& txout, tx.vout)
         {
             bool found=false; //do not add fees when sending to the same address (this can be used for restructuring large single inputs)
@@ -1209,8 +1209,8 @@ int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 }
 
 // New Difficulty adjustement and reward scheme by /u/lleti, rog1121, and DigiByte (DigiShield Developers).
-static const int64_t nTargetTimespan = 60 ; // Fractalcoin: every 1 minute
-static const int64_t nTargetSpacing = 60; // Fractalcoin: 1 minute
+static const int64_t nTargetTimespan = 60 ; // Tradercoin: every 1 minute
+static const int64_t nTargetSpacing = 60; // Tradercoin: 1 minute
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
 //
@@ -1284,7 +1284,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlock *pb
         return pindexLast->nBits;
     }
 
-    // Fractalcoin: This fixes an issue where a 51% attack can change difficulty at will.
+    // Tradercoin: This fixes an issue where a 51% attack can change difficulty at will.
     // Go back the full period unless it's the first retarget after genesis. Code courtesy of Art Forz
     int blockstogoback = retargetInterval-1;
     if ((pindexLast->nHeight+1) != retargetInterval)
@@ -1308,7 +1308,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlock *pb
     if (nActualTimespan > (retargetTimespan + (retargetTimespan/2)) ) nActualTimespan = (retargetTimespan + (retargetTimespan/2));
 
 
-    //fractalcoin slingshield modification:
+    //tradercoin slingshield modification:
     /*intentions:
     This will make it so that blocks with many coins spent will be harder to solve.
     This serves two purposes:
@@ -1833,7 +1833,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("fractalcoin-scriptch");
+    RenameThread("tradercoin-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -1878,7 +1878,7 @@ bool ConnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex, C
         }
     }
 
-    // BIP16 was always active in Fractalcoin
+    // BIP16 was always active in Tradercoin
     bool fStrictPayToScriptHash = true;
 
     unsigned int flags = SCRIPT_VERIFY_NOCACHE |
@@ -2568,7 +2568,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
 
 bool CBlockIndex::IsSuperMajority(int minVersion, const CBlockIndex* pstart, unsigned int nRequired, unsigned int nToCheck)
 {
-    // Fractalcoin: temporarily disable v2 block lockin until we are ready for v2 transition
+    // Tradercoin: temporarily disable v2 block lockin until we are ready for v2 transition
     return false;
 
     unsigned int nFound = 0;

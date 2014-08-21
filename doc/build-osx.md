@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build fractalcoind(headless client) for OSX.
+This guide will show you how to build tradercoind(headless client) for OSX.
 
 Notes
 -----
@@ -52,14 +52,14 @@ Optional: install Qt4
 
     sudo port install qt4-mac qrencode protobuf-cpp
 
-### Building `fractalcoind`
+### Building `tradercoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:fractalcoin/fractalcoin.git fractalcoin
-        cd fractalcoin
+        git clone git@github.com:tradercoin/tradercoin.git tradercoin
+        cd tradercoin
 
-2.  Build fractalcoind (and Fractalcoin-Qt, if configured):
+2.  Build tradercoind (and Tradercoin-Qt, if configured):
 
         ./autogen.sh
         ./configure
@@ -88,14 +88,14 @@ If not, you can ensure that the Homebrew OpenSSL is correctly linked by running
 
 Rerunning "openssl version" should now return the correct version.
 
-### Building `fractalcoind`
+### Building `tradercoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/fractalcoin/fractalcoin.git
-        cd fractalcoin
+        git clone https://github.com/tradercoin/tradercoin.git
+        cd tradercoin
 
-2.  Build fractalcoind:
+2.  Build tradercoind:
 
         ./autogen.sh
         ./configure
@@ -107,11 +107,11 @@ Rerunning "openssl version" should now return the correct version.
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `fractalcoind` for your own use.
+You can ignore this section if you are building `tradercoind` for your own use.
 
-fractalcoind/fractalcoin-cli binaries are not included in the Fractalcoin-Qt.app bundle.
+tradercoind/tradercoin-cli binaries are not included in the Tradercoin-Qt.app bundle.
 
-If you are building `fractalcoind` or `Fractalcoin-Qt` for others, your build machine should be set up
+If you are building `tradercoind` or `Tradercoin-Qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -132,29 +132,29 @@ As of December 2012, the `boost` port does not obey `macosx_deployment_target`.
 Download `http://gavinandresen-bitcoin.s3.amazonaws.com/boost_macports_fix.zip`
 for a fix.
 
-Once dependencies are compiled, see release-process.md for how the Fractalcoin-Qt.app
+Once dependencies are compiled, see release-process.md for how the Tradercoin-Qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
 -------
 
-It's now available at `./fractalcoind`, provided that you are still in the `src`
+It's now available at `./tradercoind`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./fractalcoind` to get the filename where it should be put, or just try these
+Run `./tradercoind` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=fractalcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Fractalcoin/fractalcoin.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Fractalcoin/fractalcoin.conf"
+    echo -e "rpcuser=tradercoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Tradercoin/tradercoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Tradercoin/tradercoin.conf"
 
 When next you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/Fractalcoin/debug.log
+    tail -f $HOME/Library/Application\ Support/Tradercoin/debug.log
 
 Other commands:
 
-    ./fractalcoind -daemon # to start the fractalcoin daemon.
-    ./fractalcoin-cli --help  # for a list of command-line options.
-    ./fractalcoin-cli help    # When the daemon is running, to get a list of RPC commands
+    ./tradercoind -daemon # to start the tradercoin daemon.
+    ./tradercoin-cli --help  # for a list of command-line options.
+    ./tradercoin-cli help    # When the daemon is running, to get a list of RPC commands

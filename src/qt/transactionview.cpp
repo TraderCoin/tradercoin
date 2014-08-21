@@ -398,7 +398,7 @@ void TransactionView::viewOnFractalchain()
     QModelIndexList selection = transactionView->selectionModel()->selectedRows();
     if(!selection.isEmpty())
     {
-        QString format("http://fractalchain.info/tx/");
+        QString format("http://traderchain.info/tx/");
         QString munged = selection.at(0).data(TransactionTableModel::TxIDRole).toString();
         format += munged.left(munged.lastIndexOf("-"));
         

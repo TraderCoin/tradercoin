@@ -41,9 +41,9 @@ static const int MAX_PAYMENT_REQUEST_SIZE = 50000; // bytes
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 35
 
-#define QAPP_ORG_NAME "Fractalcoin"
-#define QAPP_ORG_DOMAIN "fractalcoin.com"
-#define QAPP_APP_NAME_DEFAULT "Fractalcoin-Qt"
-#define QAPP_APP_NAME_TESTNET "Fractalcoin-Qt-testnet"
+#define QAPP_ORG_NAME "Tradercoin"
+#define QAPP_ORG_DOMAIN "tradercoin.com"
+#define QAPP_APP_NAME_DEFAULT "Tradercoin-Qt"
+#define QAPP_APP_NAME_TESTNET "Tradercoin-Qt-testnet"
 
 #endif // GUICONSTANTS_H

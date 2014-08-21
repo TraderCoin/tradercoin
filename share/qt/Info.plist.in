@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@, Copyright © 2013-@COPYRIGHT_YEAR@ Fractalcoin Core developers, 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@, Copyright © 2013-@COPYRIGHT_YEAR@ Tradercoin Core developers, 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@</string>
@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Fractalcoin-Qt</string>
+  <string>Tradercoin-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>com.fractalcoin.wallet-qt</string>
+  <string>com.tradercoin.wallet-qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +40,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>com.fractalcoin.FractalcoinPayment</string>
+      <string>com.tradercoin.TradercoinPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>fractalcoin</string>
+        <string>tradercoin</string>
       </array>
     </dict>
   </array>
@@ -52,9 +52,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>com.fractalcoin.paymentrequest</string>
+      <string>com.tradercoin.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Fractalcoin payment request</string>
+      <string>Tradercoin payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -62,10 +62,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-fractalcoin-payment-request</string>
+        <string>application/x-tradercoin-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>fractalcoinpaymentrequest</string>
+          <string>tradercoinpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>com.fractalcoin.paymentrequest</string>
+        <string>com.tradercoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Fractalcoin Core</source>
-        <translation>Over Fractalcoin Core</translation>
+        <source>About Tradercoin Core</source>
+        <translation>Over Tradercoin Core</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Fractalcoin Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt; Fractalcoin Core&lt;/b&gt; versie</translation>
+        <source>&lt;b&gt;Tradercoin Core&lt;/b&gt; version</source>
+        <translation>&lt;b&gt; Tradercoin Core&lt;/b&gt; versie</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -33,8 +33,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+0"/>
-        <source>The Fractalcoin Core developers</source>
-        <translation>De Fractalcoin Core ontwikkelaars</translation>
+        <source>The Tradercoin Core developers</source>
+        <translation>De Tradercoin Core ontwikkelaars</translation>
     </message>
 </context>
 <context>
@@ -121,13 +121,13 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Fractalcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw opgeslagen adressen om betalingen naar te verzenden. Controleer altijd het bedrag en het ontvangende adres voordat u uw fractalcoins verzendt.</translation>
+        <source>These are your Tradercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw opgeslagen adressen om betalingen naar te verzenden. Controleer altijd het bedrag en het ontvangende adres voordat u uw tradercoins verzendt.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Fractalcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw Fractalcoin adressen om betalingen te ontvangen. We raden u aan om een nieuw ontvangstadres voor iedere transactie te gebruiken.</translation>
+        <source>These are your Tradercoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw Tradercoin adressen om betalingen te ontvangen. We raden u aan om een nieuw ontvangstadres voor iedere transactie te gebruiken.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -247,8 +247,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FRACCOINS&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW FRACCOINS KWIJT RAKEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TRDRCOINS&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW TRDRCOINS KWIJT RAKEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -274,8 +274,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="-56"/>
-        <source>Fractalcoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Fractalcoins from being stolen by malware infecting your computer.</source>
-        <translation>Fractalcoin zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw fractalcoins stelen.</translation>
+        <source>Tradercoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Tradercoins from being stolen by malware infecting your computer.</source>
+        <translation>Tradercoin zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw tradercoins stelen.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -368,8 +368,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about Fractalcoin Core</source>
-        <translation>Laat informatie zien over Fractalcoin</translation>
+        <source>Show information about Tradercoin Core</source>
+        <translation>Laat informatie zien over Tradercoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -429,13 +429,13 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="-405"/>
-        <source>Send coins to a Fractalcoin address</source>
-        <translation>Verzend munten naar een Fractalcoin adres</translation>
+        <source>Send coins to a Tradercoin address</source>
+        <translation>Verzend munten naar een Tradercoin adres</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Fractalcoin Core</source>
-        <translation>Wijzig instellingen van Fractalcoin</translation>
+        <source>Modify configuration options for Tradercoin Core</source>
+        <translation>Wijzig instellingen van Tradercoin</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -464,8 +464,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+430"/>
-        <source>Fractalcoin</source>
-        <translation>Fractalcoin</translation>
+        <source>Tradercoin</source>
+        <translation>Tradercoin</translation>
     </message>
     <message>
         <location line="-643"/>
@@ -500,13 +500,13 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Fractalcoin addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw Fractalcoin adressen om te bewijzen dat u deze adressen bezit</translation>
+        <source>Sign messages with your Tradercoin addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw Tradercoin adressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Fractalcoin addresses</source>
-        <translation>Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde Fractalcoin adressen</translation>
+        <source>Verify messages to ensure they were signed with specified Tradercoin addresses</source>
+        <translation>Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde Tradercoin adressen</translation>
     </message>
     <message>
         <location line="+48"/>
@@ -536,19 +536,19 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="-401"/>
-        <source>Fractalcoin Core</source>
-        <translation>Fractalcoin Core</translation>
+        <source>Tradercoin Core</source>
+        <translation>Tradercoin Core</translation>
     </message>
     <message>
         <location line="+163"/>
-        <source>Request payments (generates QR codes and fractalcoin: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR codes en "fractalcoin:" URIs)</translation>
+        <source>Request payments (generates QR codes and tradercoin: URIs)</source>
+        <translation>Vraag betaling aan (genereert QR codes en "tradercoin:" URIs)</translation>
     </message>
     <message>
         <location line="+29"/>
         <location line="+2"/>
-        <source>&amp;About Fractalcoin Core</source>
-        <translation>&amp;Over Fractalcoin Core</translation>
+        <source>&amp;About Tradercoin Core</source>
+        <translation>&amp;Over Tradercoin Core</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -562,8 +562,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a fractalcoin: URI or payment request</source>
-        <translation>Open een fractalcoin: URI of betalingsverzoek</translation>
+        <source>Open a tradercoin: URI or payment request</source>
+        <translation>Open een tradercoin: URI of betalingsverzoek</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -572,19 +572,19 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+1"/>
-        <source>Show the Fractalcoin Core help message to get a list with possible Fractalcoin Core command-line options</source>
+        <source>Show the Tradercoin Core help message to get a list with possible Tradercoin Core command-line options</source>
         <translation>Toon het help-bericht voor een lijst met geldige commandoregel-opties</translation>
     </message>
     <message>
         <location line="+159"/>
         <location line="+5"/>
-        <source>Fractalcoin client</source>
-        <translation>Fractalcoin client</translation>
+        <source>Tradercoin client</source>
+        <translation>Tradercoin client</translation>
     </message>
     <message numerus="yes">
         <location line="+142"/>
-        <source>%n active connection(s) to Fractalcoin network</source>
-        <translation><numerusform>%n actieve connectie naar het Fractalcoin netwerk</numerusform><numerusform>%n actieve connecties naar het Fractalcoin netwerk</numerusform></translation>
+        <source>%n active connection(s) to Tradercoin network</source>
+        <translation><numerusform>%n actieve connectie naar het Tradercoin netwerk</numerusform><numerusform>%n actieve connecties naar het Tradercoin netwerk</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -691,8 +691,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+438"/>
-        <source>A fatal error occurred. Fractalcoin Core can no longer continue safely and will quit.</source>
-        <translation>Er is een fatale fout opgetreden. Fractalcoin kan niet meer veilig doorgaan en zal nu afgesloten worden.</translation>
+        <source>A fatal error occurred. Tradercoin Core can no longer continue safely and will quit.</source>
+        <translation>Er is een fatale fout opgetreden. Tradercoin kan niet meer veilig doorgaan en zal nu afgesloten worden.</translation>
     </message>
 </context>
 <context>
@@ -1049,8 +1049,8 @@ Adres: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Fractalcoin address.</source>
-        <translation>Het opgegeven adres &quot;%1&quot; is een ongeldig Fractalcoin adres</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Tradercoin address.</source>
+        <translation>Het opgegeven adres &quot;%1&quot; is een ongeldig Tradercoin adres</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1095,13 +1095,13 @@ Adres: %4
     <name>HelpMessageDialog</name>
     <message>
         <location filename="../forms/helpmessagedialog.ui" line="+19"/>
-        <source>Fractalcoin Core - Command-line options</source>
-        <translation>Fractalcoin Core - Commandoregel-opties</translation>
+        <source>Tradercoin Core - Command-line options</source>
+        <translation>Tradercoin Core - Commandoregel-opties</translation>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="+38"/>
-        <source>Fractalcoin Core</source>
-        <translation>Fractalcoin Core</translation>
+        <source>Tradercoin Core</source>
+        <translation>Tradercoin Core</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1153,18 +1153,18 @@ Adres: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Fractalcoin Core.</source>
-        <translation>Welkom bij Fractalcoin Core</translation>
+        <source>Welcome to Tradercoin Core.</source>
+        <translation>Welkom bij Tradercoin Core</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Fractalcoin Core will store its data.</source>
-        <translation>Omdat dit de eerste keer is dat het programma gestart is, kan je nu kiezen waar Fractalcoin Core de data moet opslaan.</translation>
+        <source>As this is the first time the program is launched, you can choose where Tradercoin Core will store its data.</source>
+        <translation>Omdat dit de eerste keer is dat het programma gestart is, kan je nu kiezen waar Tradercoin Core de data moet opslaan.</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Fractalcoin Core will download and store a copy of the Fractalcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Fractalcoin Core zal een kopie van de Fractalcoin blok keten downloaden en opslaan. Tenminste %1 GB aan data wordt opgeslagen in deze map en het zal groeien in de tijd. De portemonnee ook in deze map.</translation>
+        <source>Tradercoin Core will download and store a copy of the Tradercoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Tradercoin Core zal een kopie van de Tradercoin blok keten downloaden en opslaan. Tenminste %1 GB aan data wordt opgeslagen in deze map en het zal groeien in de tijd. De portemonnee ook in deze map.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1178,8 +1178,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+85"/>
-        <source>Fractalcoin</source>
-        <translation>Fractalcoin</translation>
+        <source>Tradercoin</source>
+        <translation>Tradercoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1264,13 +1264,13 @@ Adres: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Fractalcoin after logging in to the system.</source>
-        <translation>Start Fractalcoin automatisch na inloggen in het systeem</translation>
+        <source>Automatically start Tradercoin after logging in to the system.</source>
+        <translation>Start Tradercoin automatisch na inloggen in het systeem</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>&amp;Start Fractalcoin on system login</source>
-        <translation>Start &amp;Fractalcoin bij het inloggen in het systeem</translation>
+        <source>&amp;Start Tradercoin on system login</source>
+        <translation>Start &amp;Tradercoin bij het inloggen in het systeem</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1299,8 +1299,8 @@ Adres: %4
     </message>
     <message>
         <location line="+58"/>
-        <source>Connect to the Fractalcoin network through a SOCKS proxy.</source>
-        <translation>Verbind met het Fractalcoin netwerk via een SOCKS proxy.</translation>
+        <source>Connect to the Tradercoin network through a SOCKS proxy.</source>
+        <translation>Verbind met het Tradercoin netwerk via een SOCKS proxy.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1334,8 +1334,8 @@ Adres: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Fractalcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open de Fractalcoin-poort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en deze optie aan staat.</translation>
+        <source>Automatically open the Tradercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Open de Tradercoin-poort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en deze optie aan staat.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1404,8 +1404,8 @@ Adres: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Fractalcoin Core.</source>
-        <translation>De taal van de gebruikersinterface kan hier ingesteld worden. Deze instelling zal pas van kracht worden nadat Fractalcoin herstart wordt.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Tradercoin Core.</source>
+        <translation>De taal van de gebruikersinterface kan hier ingesteld worden. Deze instelling zal pas van kracht worden nadat Tradercoin herstart wordt.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1419,8 +1419,8 @@ Adres: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Fractalcoin addresses in the transaction list or not.</source>
-        <translation>Of Fractalcoinadressen getoond worden in de transactielijst</translation>
+        <source>Whether to show Tradercoin addresses in the transaction list or not.</source>
+        <translation>Of Tradercoinadressen getoond worden in de transactielijst</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1494,8 +1494,8 @@ Adres: %4
     <message>
         <location line="+50"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fractalcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automatisch met het Fractalcoin netwerk nadat een verbinding is gemaakt, maar dit proces is nog niet voltooid.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Tradercoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automatisch met het Tradercoin netwerk nadat een verbinding is gemaakt, maar dit proces is nog niet voltooid.</translation>
     </message>
     <message>
         <location line="-155"/>
@@ -1574,8 +1574,8 @@ Adres: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>URI can not be parsed! This can be caused by an invalid Fractalcoin address or malformed URI parameters.</source>
-        <translation>URI kan niet worden geïnterpreteerd. Dit kan komen door een ongeldig Fractalcoinadres of misvormde URI-parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Tradercoin address or malformed URI parameters.</source>
+        <translation>URI kan niet worden geïnterpreteerd. Dit kan komen door een ongeldig Tradercoinadres of misvormde URI-parameters.</translation>
     </message>
     <message>
         <location line="+96"/>
@@ -1594,8 +1594,8 @@ Adres: %4
     </message>
     <message>
         <location line="-353"/>
-        <source>Cannot start fractalcoin: click-to-pay handler</source>
-        <translation>Kan fractalcoin niet starten: click-to-pay handler</translation>
+        <source>Cannot start tradercoin: click-to-pay handler</source>
+        <translation>Kan tradercoin niet starten: click-to-pay handler</translation>
     </message>
     <message>
         <location line="+58"/>
@@ -1663,8 +1663,8 @@ Adres: %4
     <message>
         <location filename="../bitcoin.cpp" line="+71"/>
         <location line="+11"/>
-        <source>Fractalcoin</source>
-        <translation>Fractalcoin</translation>
+        <source>Tradercoin</source>
+        <translation>Tradercoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1678,8 +1678,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+82"/>
-        <source>Enter a Fractalcoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Vul een Fractalcoinadres in (bijv. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+        <source>Enter a Tradercoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Vul een Tradercoinadres in (bijv. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
 </context>
 <context>
@@ -1839,8 +1839,8 @@ Adres: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Fractalcoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het Fractalcoindebug-logbestand van de huidige datamap. Dit kan een aantal seconden duren voor grote logbestanden.</translation>
+        <source>Open the Tradercoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open het Tradercoindebug-logbestand van de huidige datamap. Dit kan een aantal seconden duren voor grote logbestanden.</translation>
     </message>
     <message>
         <location line="+76"/>
@@ -1849,8 +1849,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Fractalcoin Core RPC console.</source>
-        <translation>Welkom bij de Fractalcoin RPC-console.</translation>
+        <source>Welcome to the Tradercoin Core RPC console.</source>
+        <translation>Welkom bij de Tradercoin RPC-console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1928,8 +1928,8 @@ Adres: %4
     <message>
         <location line="+14"/>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Fractalcoin network.</source>
-        <translation>Een optioneel bericht om aan het betalingsverzoek toe te voegen, dat weergegeven zal worden bij het openen van het verzoek. Het bericht zal niet bij de betaling over het Fractalcoin netwerk verzonden worden</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Tradercoin network.</source>
+        <translation>Een optioneel bericht om aan het betalingsverzoek toe te voegen, dat weergegeven zal worden bij het openen van het verzoek. Het bericht zal niet bij de betaling over het Tradercoin netwerk verzonden worden</translation>
     </message>
     <message>
         <location line="-7"/>
@@ -2324,8 +2324,8 @@ Adres: %4
     </message>
     <message>
         <location line="+113"/>
-        <source>Warning: Invalid Fractalcoin address</source>
-        <translation>Waarschuwing: Ongeldig Fractalcoin adres</translation>
+        <source>Warning: Invalid Tradercoin address</source>
+        <translation>Waarschuwing: Ongeldig Tradercoin adres</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -2436,8 +2436,8 @@ Adres: %4
     </message>
     <message>
         <location line="+33"/>
-        <source>A message that was attached to the fractalcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fractalcoin network.</source>
-        <translation>Het aan het betalingsverzoek bijgevoegde bericht zal bij de transactie worden opgeslagen. Let op: dit bericht zal niet over het Fractalcoin netwerk verzonden worden.</translation>
+        <source>A message that was attached to the tradercoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Tradercoin network.</source>
+        <translation>Het aan het betalingsverzoek bijgevoegde bericht zal bij de transactie worden opgeslagen. Let op: dit bericht zal niet over het Tradercoin netwerk verzonden worden.</translation>
     </message>
     <message>
         <location line="+426"/>
@@ -2461,8 +2461,8 @@ Adres: %4
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+48"/>
-        <source>Fractalcoin Core is shutting down...</source>
-        <translation>Fractalcoin Core is aan het afsluiten...</translation>
+        <source>Tradercoin Core is shutting down...</source>
+        <translation>Tradercoin Core is aan het afsluiten...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2531,8 +2531,8 @@ Adres: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Fractalcoin address</source>
-        <translation>Onderteken een bericht om te bewijzen dat u een bepaald Fractalcoinadres bezit</translation>
+        <source>Sign the message to prove you own this Tradercoin address</source>
+        <translation>Onderteken een bericht om te bewijzen dat u een bepaald Tradercoinadres bezit</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2567,8 +2567,8 @@ Adres: %4
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified Fractalcoin address</source>
-        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde Fractalcoinadres het bericht heeft ondertekend.</translation>
+        <source>Verify the message to ensure it was signed with the specified Tradercoin address</source>
+        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde Tradercoinadres het bericht heeft ondertekend.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2582,8 +2582,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+30"/>
-        <source>Enter a Fractalcoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Vul een Fractalcoinadres in (bijv. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+        <source>Enter a Tradercoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Vul een Tradercoinadres in (bijv. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2661,13 +2661,13 @@ Adres: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+28"/>
-        <source>Fractalcoin Core</source>
-        <translation>Fractalcoin Core</translation>
+        <source>Tradercoin Core</source>
+        <translation>Tradercoin Core</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>The Fractalcoin Core developers</source>
-        <translation>De Fractalcoin Core ontwikkelaars</translation>
+        <source>The Tradercoin Core developers</source>
+        <translation>De Tradercoin Core ontwikkelaars</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3234,7 +3234,7 @@ Adres: %4
     </message>
 </context>
 <context>
-    <name>fractalcoin-core</name>
+    <name>tradercoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+221"/>
         <source>Usage:</source>
@@ -3257,14 +3257,14 @@ Adres: %4
     </message>
     <message>
         <location line="+22"/>
-        <source>Specify configuration file (default: fractalcoin.conf)</source>
-        <translation>Specificeer configuratiebestand (standaard: fractalcoin.conf)
+        <source>Specify configuration file (default: tradercoin.conf)</source>
+        <translation>Specificeer configuratiebestand (standaard: tradercoin.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: fractalcoind.pid)</source>
-        <translation>Specificeer pid-bestand (standaard: fractalcoind.pid)
+        <source>Specify pid file (default: tradercoind.pid)</source>
+        <translation>Specificeer pid-bestand (standaard: tradercoind.pid)
 </translation>
     </message>
     <message>
@@ -3342,23 +3342,23 @@ Adres: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=fractalcoinrpc
+rpcuser=tradercoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Tradercoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, u moet een RPC-wachtwoord instellen in het configuratiebestand: %s
 U wordt aangeraden het volgende willekeurige wachtwoord te gebruiken:
-rpcuser=fractalcoinrpc
+rpcuser=tradercoinrpc
 rpcpassword=%s
 (u hoeft dit wachtwoord niet te onthouden)
 De gebruikersnaam en wachtwoord mogen niet hetzelfde zijn.
 Als het bestand niet bestaat, make hem dan aan met leesrechten voor enkel de eigenaar.
 Het is ook aan te bevelen &quot;alertnotify&quot; in te stellen zodat u op de hoogte gesteld wordt van problemen;
-for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@foo.com</translation>
+for example: alertnotify=echo %%s | mail -s &quot;Tradercoin Alert&quot; admin@foo.com</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -3377,8 +3377,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Fractalcoin Core is probably already running.</source>
-        <translation>Kan geen lock op de datamap %s verkrijgen. Fractalcoin draait vermoedelijk reeds.</translation>
+        <source>Cannot obtain a lock on data directory %s. Tradercoin Core is probably already running.</source>
+        <translation>Kan geen lock op de datamap %s verkrijgen. Tradercoin draait vermoedelijk reeds.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3422,8 +3422,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Fractalcoin Core will not work properly.</source>
-        <translation>Waarschuwing: Controleer dat de datum en tijd op uw computer correct zijn ingesteld. Als uw klok fout staat zal Fractalcoin niet correct werken.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Tradercoin Core will not work properly.</source>
+        <translation>Waarschuwing: Controleer dat de datum en tijd op uw computer correct zijn ingesteld. Als uw klok fout staat zal Tradercoin niet correct werken.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3457,13 +3457,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Fractalcoin Core Daemon</source>
-        <translation>Fractalcoin Core Daemon</translation>
+        <source>Tradercoin Core Daemon</source>
+        <translation>Tradercoin Core Daemon</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Fractalcoin Core RPC client version</source>
-        <translation>Fractalcoin RPC desktop versie</translation>
+        <source>Tradercoin Core RPC client version</source>
+        <translation>Tradercoin RPC desktop versie</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3662,8 +3662,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to Fractalcoin Core server</source>
-        <translation>Stuur commando naar Fractalcoin server</translation>
+        <source>Send command to Tradercoin Core server</source>
+        <translation>Stuur commando naar Tradercoin server</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3682,8 +3682,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+2"/>
-        <source>Start Fractalcoin Core server</source>
-        <translation>Start Fractalcoin Core server</translation>
+        <source>Start Tradercoin Core server</source>
+        <translation>Start Tradercoin Core server</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3692,8 +3692,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+10"/>
-        <source>Usage (deprecated, use fractalcoin-cli):</source>
-        <translation>Gebruik (vervallen; gebruik Fractalcoin-cli);</translation>
+        <source>Usage (deprecated, use tradercoin-cli):</source>
+        <translation>Gebruik (vervallen; gebruik Tradercoin-cli);</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3957,13 +3957,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Fractalcoin Core</source>
-        <translation>Fout bij laden wallet.dat: Portemonnee vereist een nieuwere versie van Fractalcoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Tradercoin Core</source>
+        <translation>Fout bij laden wallet.dat: Portemonnee vereist een nieuwere versie van Tradercoin</translation>
     </message>
     <message>
         <location line="+98"/>
-        <source>Wallet needed to be rewritten: restart Fractalcoin Core to complete</source>
-        <translation>Portemonnee moest herschreven worden: Herstart Fractalcoin om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart Tradercoin Core to complete</source>
+        <translation>Portemonnee moest herschreven worden: Herstart Tradercoin om te voltooien</translation>
     </message>
     <message>
         <location line="-100"/>
@@ -4022,8 +4022,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Fractalcoin Alert&quot; admin@
     </message>
     <message>
         <location line="-32"/>
-        <source>Unable to bind to %s on this computer. Fractalcoin Core is probably already running.</source>
-        <translation>Niet in staat om aan %s te binden op deze computer. Fractalcoin draait vermoedelijk reeds.</translation>
+        <source>Unable to bind to %s on this computer. Tradercoin Core is probably already running.</source>
+        <translation>Niet in staat om aan %s te binden op deze computer. Tradercoin draait vermoedelijk reeds.</translation>
     </message>
     <message>
         <location line="+95"/>
