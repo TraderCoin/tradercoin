@@ -8,6 +8,7 @@
 
 #include "bignum.h"
 #include "uint256.h"
+#include "pow.h"
 
 #include <vector>
 
@@ -68,7 +69,7 @@ public:
     int RPCPort() const { return nRPCPort; }
 protected:
     CChainParams() {}
-
+    void MineNewGenesisBlock();
     uint256 hashGenesisBlock;
     MessageStartChars pchMessageStart;
     // Raw pub key bytes for the broadcast alert signing key.
