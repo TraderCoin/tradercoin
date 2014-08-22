@@ -104,12 +104,12 @@ public:
 
 
         // Workaround for Boost not being quite compatible with C++11;
-        std::vector<unsigned char> pka = list_of(36);
+        std::vector<unsigned char> pka = list_of(66);
         base58Prefixes[PUBKEY_ADDRESS] = pka;
         
-        std::vector<unsigned char> sca = list_of(20);
+        std::vector<unsigned char> sca = list_of(142);
         base58Prefixes[SCRIPT_ADDRESS] = sca;
-        //SENDALERT: note, to use sendalert with WIF compressed, change to list_of(128) (here and for testnet as well)
+
         std::vector<unsigned char> sk  = list_of(128);
         base58Prefixes[SECRET_KEY]     = sk;
         
@@ -217,7 +217,7 @@ public:
         base58Prefixes[PUBKEY_ADDRESS] = pka;
         std::vector<unsigned char> sca = list_of(196);
         base58Prefixes[SCRIPT_ADDRESS] = sca;
-        std::vector<unsigned char> sk  = list_of(241);
+        std::vector<unsigned char> sk  = list_of(128);
         base58Prefixes[SECRET_KEY]     = sk;
         std::vector<unsigned char> epk = list_of(0x04)(0x35)(0xD1)(0xDF);
         base58Prefixes[EXT_PUBLIC_KEY] = epk;
