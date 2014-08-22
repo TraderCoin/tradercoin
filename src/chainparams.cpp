@@ -60,8 +60,13 @@ public:
         genesis.nVersion = 1;
         genesis.nBits    = 0x1e0ffff0;
 
+        genesis.nTime = 1408677225;
+        genesis.nNonce = 53874;
+        assert(genesis.hashMerkleRoot == uint256("0xd8c8d4759b8461e083f9b84382d4e8f0178b7f2a1eeab00f57829fe4d321dcee"));
+        assert(genesis.GetHash() == uint256("0xd7df9846c4cb271c70203632229652c33c958bf9beada29763f6d29a94873fe5"));
 
-        if (true) 
+
+        if (false) 
         {
             //This will output (to stdout) the code for a new genesis block when it is found
             genesis.nTime=time(NULL);
@@ -166,6 +171,10 @@ public:
         nRPCPort = 44111;
         strDataDir = "testnet";
 
+        genesis.nTime = 1408677745;
+        genesis.nNonce = 377873;
+        assert(genesis.hashMerkleRoot == uint256("0xd8c8d4759b8461e083f9b84382d4e8f0178b7f2a1eeab00f57829fe4d321dcee"));
+        assert(genesis.GetHash() == uint256("0x5e0cc8945f452b9d765a992599364ec95791e40415a049d9701930e92d80d1a3"));
 
 
         if (false) 
