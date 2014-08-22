@@ -1109,7 +1109,7 @@ int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
     int64_t reward = 0;
     if(nHeight == 1)
     {
-        reward=57600;
+        reward=57600*COIN;
     }
     else if(nHeight < 100)
     {

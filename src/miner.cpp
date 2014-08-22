@@ -561,7 +561,7 @@ void static tradercoinMiner(CWallet *pwallet)
             uint256 thash;
             while (true)
             {
-                thash = pblock->GetHash();
+                thash = pblock->GetPoWHash();
 
                 if (thash <= hashTarget)
                 {
