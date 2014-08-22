@@ -11,6 +11,7 @@
 #include "core.h"
 #include "protocol.h"
 #include "util.h"
+#include "scrypt.h"
 
 #include <boost/assign/list_of.hpp>
 
@@ -37,7 +38,7 @@ public:
         pchMessageStart[2] = 0xc1;
         pchMessageStart[3] = 0xc1;
         //owned and valid alert key
-        vAlertPubKey = ParseHex("0451BBFA5B928095F41C9FF44DB2ECAD9257C550E720B46AE9AF06F3476D9967E5DBE9907972E6D85608C8A7B36D64BDFDA8900A2A5A67478FCBAB03A58D03A4AE");
+        vAlertPubKey = ParseHex("04F583F5435B4E4B8E7A854491CE941AF69CB2E2E3A2E888309AEBED2ABC4C57C2ECBCB9C4256660443E183C910D3E71354B2BA42D0348911303813B44C54283CD");
         nDefaultPort = 33112; //p2p port
         nRPCPort = 33111;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
@@ -45,7 +46,6 @@ public:
 
         // Build the genesis block. Note that the output of the genesis coinbase cannot
         // be spent as it did not originally exist in the database.
-        //sha256("Source: Bergdahl physically abused by Taliban http://www.cnn.com/2014/06/06/politics/bowe-bergdahl-release/")
         const char* pszTimestamp = "tradercoin test genesis";
         CTransaction txNew;
         txNew.vin.resize(1);
@@ -59,25 +59,28 @@ public:
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nBits    = 0x1e0ffff0;
-        genesis.nTime = 1402197204;
-        genesis.nNonce = 1939915;
 
-        hashGenesisBlock = genesis.GetHash();
 
         if (false) 
         {
+            //This will output (to stdout) the code for a new genesis block when it is found
+            genesis.nTime=time(NULL);
+            genesis.nNonce=0;
             printf("Searching for genesis block...\n");
-            // This will figure out a valid hash and Nonce if you're
-            // creating a different genesis block:
+
             uint256 hashTarget = CBigNum().SetCompact(genesis.nBits).getuint256();
             uint256 thash;
+            char scratchpad[SCRYPT_SCRATCHPAD_SIZE];
+
 
             while(1)
             {
-                thash=genesis.GetHash();
+                //block hash is still sha256, just PoW is scrypt
+                scrypt_1024_1_1_256_sp(BEGIN(genesis.nVersion), BEGIN(thash), scratchpad);
+                //thash=genesis.GetHash();
                 if (thash <= hashTarget)
                     break;
-                if ((genesis.nNonce & 0xFFF) == 0)
+                if ((genesis.nNonce & 0xFFFF) == 0)
                 {
                     printf("nonce %08X: hash = %s (target = %s)\n",genesis.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
                 }
@@ -95,6 +98,7 @@ public:
             exit(1);
         }
 
+        hashGenesisBlock = genesis.GetHash();
 
         vSeeds.push_back(CDNSSeedData("seed1.tradercoin.net", "seed1.tradercoin.net"));
 
@@ -106,7 +110,7 @@ public:
         std::vector<unsigned char> sca = list_of(20);
         base58Prefixes[SCRIPT_ADDRESS] = sca;
         //SENDALERT: note, to use sendalert with WIF compressed, change to list_of(128) (here and for testnet as well)
-        std::vector<unsigned char> sk  = list_of(125);
+        std::vector<unsigned char> sk  = list_of(128);
         base58Prefixes[SECRET_KEY]     = sk;
         
         std::vector<unsigned char> epk = list_of(0x04)(0x88)(0xC4)(0x2E);
@@ -162,24 +166,28 @@ public:
         nRPCPort = 44111;
         strDataDir = "testnet";
 
-        // Modify the testnet genesis block so the timestamp is valid for a later start so that they don't match
-        genesis.nTime = 1402197254;
-        genesis.nNonce = 2239126;
-        hashGenesisBlock = genesis.GetHash();
-        if (false)
+
+
+        if (false) 
         {
-            printf("Searching for testnet genesis block...\n");
-            // This will figure out a valid hash and Nonce if you're
-            // creating a different genesis block:
+            //This will output (to stdout) the code for a new genesis block when it is found
+            genesis.nTime=time(NULL);
+            genesis.nNonce=0;
+            printf("Searching for genesis block...\n");
+
             uint256 hashTarget = CBigNum().SetCompact(genesis.nBits).getuint256();
             uint256 thash;
+            char scratchpad[SCRYPT_SCRATCHPAD_SIZE];
+
 
             while(1)
             {
-                thash=genesis.GetHash();
+                //block hash is still sha256, just PoW is scrypt
+                scrypt_1024_1_1_256_sp(BEGIN(genesis.nVersion), BEGIN(thash), scratchpad);
+                //thash=genesis.GetHash();
                 if (thash <= hashTarget)
                     break;
-                if ((genesis.nNonce & 0xFFF) == 0)
+                if ((genesis.nNonce & 0xFFFF) == 0)
                 {
                     printf("nonce %08X: hash = %s (target = %s)\n",genesis.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
                 }
@@ -196,6 +204,8 @@ public:
             printf("assert(genesis.GetHash() == uint256(\"0x%s\"));\n",genesis.GetHash().ToString().c_str());
             exit(1);
         }
+
+        hashGenesisBlock = genesis.GetHash();
 
         vFixedSeeds.clear();
         vSeeds.clear();

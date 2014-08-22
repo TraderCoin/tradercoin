@@ -68,7 +68,6 @@ public:
     int RPCPort() const { return nRPCPort; }
 protected:
     CChainParams() {}
-    void MineNewGenesisBlock();
     uint256 hashGenesisBlock;
     MessageStartChars pchMessageStart;
     // Raw pub key bytes for the broadcast alert signing key.
