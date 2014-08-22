@@ -58,9 +58,9 @@ unsigned int nCoinCacheSize = 5000;
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
 //                              0.00000123
-int64_t CTransaction::nMinTxFee = 1000;  // Override with -mintxfee
+int64_t CTransaction::nMinTxFee = COIN / 10000;  // Override with -mintxfee
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying and mining) */
-int64_t CTransaction::nMinRelayTxFee = 500;
+int64_t CTransaction::nMinRelayTxFee = COIN / 10000; 
 
 static CMedianFilter<int> cPeerBlockCounts(8, 0); // Amount of blocks that other nodes claim to have
 
@@ -702,17 +702,6 @@ bool CheckTransaction(const CTransaction& tx, CValidationState &state)
     return true;
 }
 
-static const int64_t TransactionFeeDivider = 200; //divider for outputs to specify transaction fee percentage (in this case, 0.5%)
-static const int64_t TransactionFeeDividerSelf = 10000000; //divider for sending an input to output by same address to specify transaction fee percentage
-//the fee for sending to self equates to almost nothing
-//The time when to begin sending transactions out with percentage based transaction fees
-
-
-static const time_t CoinLaunchTime=1402790400L; //Sat, 14 Jun 2014 20:00:00 -0400
-static const time_t PercentageFeeSendingBegin = CoinLaunchTime+(60*60*24*26); //26 days after launch
-//The time when to stop relaying free/cheap transactions and only relay ones with percentage fees
-static const time_t PercentageFeeRelayBegin = CoinLaunchTime+(60*60*24*28); //28 days after launch
-
 
 int64_t GetMinFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree, enum GetMinFee_mode mode)
 {    
@@ -727,39 +716,6 @@ int64_t GetMinFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree, 
         if (txout.nValue < DUST_SOFT_LIMIT)
             nMinFee += nBaseFee;
 
-    time_t t=time(NULL);
-    if(t > PercentageFeeRelayBegin || (t > PercentageFeeSendingBegin && mode==GMF_SEND) )  
-    {
-        /*XXX this could contain a loophole. 
-        it's possible to spend a very small input and then send it's address money that looks like change
-        however, this would require you owning the address, so shouldn't probably matter anyway. 
-        if someone wants to avoid fees that strongly, they can mine a block themselves even or arrange for a pool to
-        */
-        // tradercoin percentage fee implementation
-        BOOST_FOREACH(const CTxOut& txout, tx.vout)
-        {
-            bool found=false; //do not add fees when sending to the same address (this can be used for restructuring large single inputs)
-            BOOST_FOREACH(const CTxIn& txin, tx.vin)
-            {
-                if(txin.prevout.hash == txout.GetHash())
-                {        
-                    found=true;            
-                }
-            }
-            if(!found)
-            {
-                nMinFee += txout.nValue/TransactionFeeDivider;
-            }
-            else
-            {
-                nMinFee+=txout.nValue/TransactionFeeDividerSelf;
-            }
-        }
-    }
-    if(nMinFee > COIN*2)
-    {
-        nMinFee=COIN*2;
-    }
     if (!MoneyRange(nMinFee))
         nMinFee = MAX_MONEY;
     return nMinFee;
@@ -1147,65 +1103,23 @@ int static generateMTRandom(unsigned int s, int range)
     boost::uniform_int<> dist(1, range);
     return dist(gen);
 }
-//when to fix bug where fees aren't included in block value
-static const int64_t MAINNET_TXFEE_BLOCK_FORK=22500;
-static const int64_t TESTNET_TXFEE_BLOCK_FORK=9800;
 
 int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 {
-    //1M coins total. 5000 premine, 40 per block after, etc etc
-    int64_t reward = 10 * COIN;
-    int adjust=30+1; //30 blocks of zero rewards, to adjust difficulty and ensure fair launch (plus 1 for premine)
-    int firstreward=adjust+1*60*24; //first day of mining 
-    int secondreward=firstreward+(13*60*24); //next 13 days of mining
-    int thirdreward=secondreward+(13*60*24); //next 13 days of mining
-    int fourthreward=thirdreward+(1*60*24); //last day of "primary mining"
-    int finalreward=fourthreward+((60*24*221)-40); //final reward phase (after this, nothing)
-    bool withfees=nHeight > MAINNET_TXFEE_BLOCK_FORK | (nHeight>TESTNET_TXFEE_BLOCK_FORK && TestNet());
-    int64_t sub=0;
-    if(nHeight==1)
+    int64_t reward = 0;
+    if(nHeight == 1)
     {
-        sub=500*reward; //premine of 5000 coins, 0.5% of cap
+        reward=57600;
     }
-    else if(nHeight < adjust)
+    else if(nHeight < 100)
     {
-        sub=0;
+        reward=0;
     }
-    else if(nHeight < firstreward)
+    else if(nHeight < 4971200) //about 10 years
     {
-        sub=reward*4; //bonus phase of 40 coins 
+        reward=2*COIN;
     }
-    else if(nHeight<secondreward)
-    {
-        sub=reward*2; //normal first phase of 20 coins
-    }
-    else if(nHeight<thirdreward)
-    {
-        if(nHeight>MAINNET_TXFEE_BLOCK_FORK && (nHeight < MAINNET_TXFEE_BLOCK_FORK+60*6))
-        {
-            sub=reward*2; //bonus round for forking 
-        }else{
-            sub=reward*1; //normal last phase of 10 coin
-        }
-    }
-    else if(nHeight<fourthreward)
-    {
-        sub=reward*4; //end primary mining with a bang round of 40 coins
-    }
-    else if(nHeight<finalreward)
-    {
-        sub=reward/10; //final phase is 1 coin reward
-    }
-    else
-    {
-        sub=0; //no coins
-    }
-    if(withfees)
-    {
-        return sub+nFees;
-    }else{
-        return sub;
-    }
+    return reward+nFees;
 
 }
 
@@ -1308,57 +1222,12 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlock *pb
     if (nActualTimespan < (retargetTimespan - (retargetTimespan/4)) ) nActualTimespan = (retargetTimespan - (retargetTimespan/4));
     if (nActualTimespan > (retargetTimespan + (retargetTimespan/2)) ) nActualTimespan = (retargetTimespan + (retargetTimespan/2));
 
-
-    //tradercoin slingshield modification:
-    /*intentions:
-    This will make it so that blocks with many coins spent will be harder to solve.
-    This serves two purposes:
-    1. It's pretty much certain that when the block reward goes up significantly from percentage transaction fees, multipools will hop on
-       This makes it so that when the reward is higher, the difficulty is automatically a bit higher, ensuring multipools can't instamine the high value block
-    2. This increases overall network security, given the certainty that multipools won't always be mining this. 
-       If trying to do a signficant double spend, you'd have to spend the coins on both sides of the double-spend fork attempt. 
-       To comply with network rules, both sides would therefore be of higher difficulty(up to 20% higher). This is not a problem
-       for the legitimate fork though, because when the big spend and it's fees are seen, multipools would hop on.
-       This effectively makes it so that a significant network attack would require a 71% hashrate, rather than just 51%
-       Given that multipools will always mine big transaction blocks, that is. 
-
-       This effectively makes mining big fees slightly less profitable. So, when fees increase by 2%, difficulty of the block increases by 1%, 3% is 2%, etc. 
-       It's possible you could make a transaction with only mining fees to circumvent this, but this block would be less difficult, and as such, 
-       if the block containing your spend was mined, it would replace your weaker block. So, this makes 1 confirmation transactions significantly safer.
-    */
-    int64_t adjust=0;
-    if(pindexLast->nHeight > 40353) //don't activate til rewards drop
-    {
-        const static int64_t stepcount=12;
-        //min fees: 0.1, 0.2, etc etc corresponding to 1% increase, 2% increase etc
-        const static int64_t steps[stepcount]={10*COIN,20*COIN,30*COIN,40*COIN,50*COIN,60*COIN,70*COIN,80*COIN,90*COIN,100*COIN,110*COIN,210*COIN};
-        //difficulty increase in milliseconds. Corresponds to 0.5% increase, 1%, 2%, etc
-        const static int64_t adjusts[stepcount]={300,600,1200,1800,2400,3000,3600,4200,4800,5400,6000,12000};
-        int64_t sum=0;
-        BOOST_FOREACH(const CTransaction &tx, pblock->vtx)
-        {
-            sum+=tx.GetValueOut();
-        }
-        for(int i=0;i<stepcount;i++)
-        {
-            if(sum>steps[i])
-            {
-                adjust=adjusts[i];
-            }else
-            {
-                break;
-            }
-        }
-    }
-
     // Retarget
     CBigNum bnNew;
     bnNew.SetCompact(pindexLast->nBits);
     //scale up for millisecond granularity
-    int64_t scale=1000;
-    bnNew *= nActualTimespan*scale;
-    //slingshield effectively works by making the target block time longer temporarily
-    bnNew /= (retargetTimespan*scale)+adjust; 
+    bnNew *= nActualTimespan;
+    bnNew /= retargetTimespan; 
 
 
 
