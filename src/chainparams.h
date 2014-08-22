@@ -8,7 +8,6 @@
 
 #include "bignum.h"
 #include "uint256.h"
-#include "pow.h"
 
 #include <vector>
 

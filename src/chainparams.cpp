@@ -16,36 +16,6 @@
 
 using namespace boost::assign;
 
-void  CChainParams::MineNewGenesisBlock()
-{
-    //This will output (to stdout) the code for a new genesis block when it is found
-    genesis.nTime=time(NULL);
-    genesis.nNonce=0;
-    printf("Searching for genesis block...\n");
-    uint256 thash;
-    while(1)
-    {
-        thash=genesis.GetHash();
-        if (CheckProofOfWork(thash, genesis.nBits, this))
-            break;
-        if ((genesis.nNonce & 0xFFFF) == 0)
-        {
-            printf("nonce %08X: hash = %s\n",genesis.nNonce, thash.ToString().c_str());
-        }
-        ++genesis.nNonce;
-        if (genesis.nNonce == 0)
-        {
-            printf("NONCE WRAPPED, incrementing time\n");
-            ++genesis.nTime;
-        }
-    }
-    printf("genesis.nTime = %u;\n",genesis.nTime);
-    printf("genesis.nNonce = %u;\n",genesis.nNonce);
-    printf("assert(genesis.hashMerkleRoot == uint256(\"0x%s\"));\n",genesis.hashMerkleRoot.ToString().c_str());
-    printf("assert(genesis.GetHash() == uint256(\"0x%s\"));\n",genesis.GetHash().ToString().c_str());
-    exit(1);
-}
-
 
 
 //
@@ -76,7 +46,7 @@ public:
         // Build the genesis block. Note that the output of the genesis coinbase cannot
         // be spent as it did not originally exist in the database.
         //sha256("Source: Bergdahl physically abused by Taliban http://www.cnn.com/2014/06/06/politics/bowe-bergdahl-release/")
-        const char* pszTimestamp = "028dedef43de6a100620c2d3ac4c54d354dafaace897d2d5c96a1cd705025625";
+        const char* pszTimestamp = "tradercoin test genesis";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -118,39 +88,15 @@ public:
                     ++genesis.nTime;
                 }
             }
-            printf("genesis.nTime = %u \n",genesis.nTime);
-            printf("genesis.nNonce = %u \n",genesis.nNonce);
-            printf("genesis.hashMerkleRoot = %s\n",genesis.hashMerkleRoot.ToString().c_str());
-            printf("genesis.GetHash = %s\n",genesis.GetHash().ToString().c_str());
+            printf("genesis.nTime = %u;\n",genesis.nTime);
+            printf("genesis.nNonce = %u;\n",genesis.nNonce);
+            printf("assert(genesis.hashMerkleRoot == uint256(\"0x%s\"));\n",genesis.hashMerkleRoot.ToString().c_str());
+            printf("assert(genesis.GetHash() == uint256(\"0x%s\"));\n",genesis.GetHash().ToString().c_str());
             exit(1);
         }
-        /*
-genesis.nTime = 1402197204 
-genesis.nNonce = 1939915 
-genesis.hashMerkleRoot = e85e61ae6240a486898d36427284d1bfeb04d56edb137288b9e3614bc437c3b0
-genesis.GetHash = 0000092c4440834fd6f231f54a8dbc3e989091277e4be49cf28b7f62b0385b75
-        */
 
-        assert(genesis.hashMerkleRoot == uint256("0xe85e61ae6240a486898d36427284d1bfeb04d56edb137288b9e3614bc437c3b0"));
-        assert(hashGenesisBlock == uint256("0x0000092c4440834fd6f231f54a8dbc3e989091277e4be49cf28b7f62b0385b75"));
 
         vSeeds.push_back(CDNSSeedData("seed1.tradercoin.net", "seed1.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed2.tradercoin.net", "seed2.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed3.tradercoin.net", "seed3.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed4.tradercoin.net", "seed4.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed5.tradercoin.net", "seed5.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed6.tradercoin.net", "seed6.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed7.tradercoin.net", "seed7.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed8.tradercoin.net", "seed8.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed1.traderco.in", "seed1.traderco.in"));
-        vSeeds.push_back(CDNSSeedData("seed2.traderco.in", "seed2.traderco.in"));
-        vSeeds.push_back(CDNSSeedData("seed3.traderco.in", "seed3.traderco.in"));
-        vSeeds.push_back(CDNSSeedData("seed4.traderco.in", "seed4.traderco.in"));
-        vSeeds.push_back(CDNSSeedData("seed5.traderco.in", "seed5.traderco.in"));
-        vSeeds.push_back(CDNSSeedData("seed6.traderco.in", "seed6.traderco.in"));
-        vSeeds.push_back(CDNSSeedData("seed7.traderco.in", "seed7.traderco.in"));
-        vSeeds.push_back(CDNSSeedData("seed8.traderco.in", "seed8.traderco.in"));
-        vSeeds.push_back(CDNSSeedData("earlz.net", "earlz.net"));
 
 
         // Workaround for Boost not being quite compatible with C++11;
@@ -244,41 +190,16 @@ public:
                     ++genesis.nTime;
                 }
             }
-            printf("genesis.nTime = %u \n",genesis.nTime);
-            printf("genesis.nNonce = %u \n",genesis.nNonce);
-            printf("genesis.hashMerkleRoot = %s\n",genesis.hashMerkleRoot.ToString().c_str());
-            printf("genesis.GetHash = %s\n",genesis.GetHash().ToString().c_str());
+            printf("genesis.nTime = %u;\n",genesis.nTime);
+            printf("genesis.nNonce = %u;\n",genesis.nNonce);
+            printf("assert(genesis.hashMerkleRoot == uint256(\"0x%s\"));\n",genesis.hashMerkleRoot.ToString().c_str());
+            printf("assert(genesis.GetHash() == uint256(\"0x%s\"));\n",genesis.GetHash().ToString().c_str());
             exit(1);
         }
-        /*
-genesis.nTime = 1402197254 
-genesis.nNonce = 2239126 
-genesis.hashMerkleRoot = e85e61ae6240a486898d36427284d1bfeb04d56edb137288b9e3614bc437c3b0
-genesis.GetHash = 00000202f5e6dfd3764cad1bc6011484d8c3f1df023ece2e6e88b31c87f88d00
-        */
-        assert(hashGenesisBlock==uint256("0x00000202f5e6dfd3764cad1bc6011484d8c3f1df023ece2e6e88b31c87f88d00"));
-        assert(genesis.hashMerkleRoot == uint256("0xe85e61ae6240a486898d36427284d1bfeb04d56edb137288b9e3614bc437c3b0"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("testnet.tradercoin.net", "testnet.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("earlz.net", "earlz.net"));
-        vSeeds.push_back(CDNSSeedData("seed1.tradercoin.net", "seed1.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed2.tradercoin.net", "seed2.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed3.tradercoin.net", "seed3.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed4.tradercoin.net", "seed4.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed5.tradercoin.net", "seed5.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed6.tradercoin.net", "seed6.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed7.tradercoin.net", "seed7.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed8.tradercoin.net", "seed8.tradercoin.net"));
-        vSeeds.push_back(CDNSSeedData("seed1.traderco.in", "seed1.traderco.in"));
-        vSeeds.push_back(CDNSSeedData("seed2.traderco.in", "seed2.traderco.in"));
-        vSeeds.push_back(CDNSSeedData("seed3.traderco.in", "seed3.traderco.in"));
-        vSeeds.push_back(CDNSSeedData("seed4.traderco.in", "seed4.traderco.in"));
-        vSeeds.push_back(CDNSSeedData("seed5.traderco.in", "seed5.traderco.in"));
-        vSeeds.push_back(CDNSSeedData("seed6.traderco.in", "seed6.traderco.in"));
-        vSeeds.push_back(CDNSSeedData("seed7.traderco.in", "seed7.traderco.in"));
-        vSeeds.push_back(CDNSSeedData("seed8.traderco.in", "seed8.traderco.in"));
 
         // Boost sucks, and should not be used. Workaround for Boost not being compatible with C++11;
         
