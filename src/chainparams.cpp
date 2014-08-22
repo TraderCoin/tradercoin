@@ -61,7 +61,7 @@ public:
         genesis.nBits    = 0x1e0ffff0;
 
 
-        if (false) 
+        if (true) 
         {
             //This will output (to stdout) the code for a new genesis block when it is found
             genesis.nTime=time(NULL);

@@ -1113,7 +1113,7 @@ int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
     }
     else if(nHeight < 100)
     {
-        reward=0;
+        reward=COIN/10; //0.1
     }
     else if(nHeight < 4971200) //about 10 years
     {
