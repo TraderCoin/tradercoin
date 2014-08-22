@@ -39,8 +39,8 @@ public:
         pchMessageStart[3] = 0xc1;
         //owned and valid alert key
         vAlertPubKey = ParseHex("04F583F5435B4E4B8E7A854491CE941AF69CB2E2E3A2E888309AEBED2ABC4C57C2ECBCB9C4256660443E183C910D3E71354B2BA42D0348911303813B44C54283CD");
-        nDefaultPort = 33112; //p2p port
-        nRPCPort = 33111;
+        nDefaultPort = 37001; //p2p port
+        nRPCPort = 37000;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
         nSubsidyHalvingInterval = 210000;
 

@@ -23,5 +23,5 @@ Development is ongoing and the development team as well as other volunteers can 
 
 ## Network ports
 
-* RPC 33111
-* P2P 33112
+* RPC 37000
+* P2P 37001
