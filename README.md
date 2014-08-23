@@ -1,7 +1,7 @@
 # Tradercoin Core [TRDR]
 ==========================
 
-![Tradercoin](http://i.imgur.com/LCv2wcn.png)
+![Tradercoin](http://i.imgur.com/6KdADG0.png)
 
 ## What is Tradercoin?
 Tradercoin is a cryptocurrency like Bitcoin, although with many key differences. Tradercoin's wallet is forked from Bitcoin 0.9.2, and thus has a build process slightly different from most altcoins.
