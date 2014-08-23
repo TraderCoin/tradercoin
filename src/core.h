@@ -19,7 +19,7 @@
 class CTransaction;
 
 /** No amount larger than this (in satoshi) is valid */
-static const int64_t MAX_MONEY = 100000 * COIN; // Tradercoin: maximum of 100K coins, max transaction 100K
+static const int64_t MAX_MONEY = 10000000 * COIN; // Tradercoin: maximum of 10M coins, max transaction 10M
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 
 /** An outpoint - a combination of a transaction hash and an index n into its vout */
