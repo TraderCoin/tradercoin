@@ -131,7 +131,7 @@ TransactionView::TransactionView(QWidget *parent) :
     QAction *copyTxIDAction = new QAction(tr("Copy transaction ID"), this);
     QAction *editLabelAction = new QAction(tr("Edit label"), this);
     QAction *showDetailsAction = new QAction(tr("Show transaction details"), this);
-    QAction *viewOnFractalchain = new QAction(tr("Show transaction on Fractalchain"), this);
+    QAction *viewOnTraderchain = new QAction(tr("Show transaction on Traderchain"), this);
 
     contextMenu = new QMenu();
     contextMenu->addAction(copyAddressAction);
@@ -142,7 +142,7 @@ TransactionView::TransactionView(QWidget *parent) :
     contextMenu->addAction(editLabelAction);
     contextMenu->addAction(showDetailsAction);
     contextMenu->addSeparator();
-    contextMenu->addAction(viewOnFractalchain);
+    contextMenu->addAction(viewOnTraderchain);
 
     // Connect actions
     connect(dateWidget, SIGNAL(activated(int)), this, SLOT(chooseDate(int)));
@@ -159,7 +159,7 @@ TransactionView::TransactionView(QWidget *parent) :
     connect(copyTxIDAction, SIGNAL(triggered()), this, SLOT(copyTxID()));
     connect(editLabelAction, SIGNAL(triggered()), this, SLOT(editLabel()));
     connect(showDetailsAction, SIGNAL(triggered()), this, SLOT(showDetails()));
-    connect(viewOnFractalchain, SIGNAL(triggered()), this, SLOT(viewOnFractalchain()));
+    connect(viewOnTraderchain, SIGNAL(triggered()), this, SLOT(viewOnTraderchain()));
 }
 
 void TransactionView::setModel(WalletModel *model)
@@ -393,7 +393,7 @@ void TransactionView::showDetails()
 }
 
 
-void TransactionView::viewOnFractalchain()
+void TransactionView::viewOnTraderchain()
 {
     QModelIndexList selection = transactionView->selectionModel()->selectedRows();
     if(!selection.isEmpty())

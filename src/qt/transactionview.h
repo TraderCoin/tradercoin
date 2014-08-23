@@ -71,7 +71,7 @@ private slots:
     void copyLabel();
     void copyAmount();
     void copyTxID();
-    void viewOnFractalchain();
+    void viewOnTraderchain();
 
 signals:
     void doubleClicked(const QModelIndex&);
