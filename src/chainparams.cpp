@@ -46,7 +46,7 @@ public:
 
         // Build the genesis block. Note that the output of the genesis coinbase cannot
         // be spent as it did not originally exist in the database.
-        const char* pszTimestamp = "tradercoin test genesis";
+        const char* pszTimestamp = "The Times 8/22/14 Settling for $16 Billion, Bank Knows It Will Pay Much Less";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -60,13 +60,9 @@ public:
         genesis.nVersion = 1;
         genesis.nBits    = 0x1e0ffff0;
 
-        genesis.nTime = 1408677225;
-        genesis.nNonce = 53874;
-        assert(genesis.hashMerkleRoot == uint256("0xd8c8d4759b8461e083f9b84382d4e8f0178b7f2a1eeab00f57829fe4d321dcee"));
-        assert(genesis.GetHash() == uint256("0xd7df9846c4cb271c70203632229652c33c958bf9beada29763f6d29a94873fe5"));
 
 
-        if (false) 
+        if (true) 
         {
             //This will output (to stdout) the code for a new genesis block when it is found
             genesis.nTime=time(NULL);

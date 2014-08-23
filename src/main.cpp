@@ -1109,9 +1109,9 @@ int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
     int64_t reward = 0;
     if(nHeight == 1)
     {
-        reward=57600*COIN;
+        reward=5760*COIN;
     }
-    else if(nHeight < 100)
+    else if(nHeight < 60)
     {
         reward=COIN/10; //0.1
     }
@@ -1124,7 +1124,7 @@ int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 }
 
 // New Difficulty adjustement and reward scheme by /u/lleti, rog1121, and DigiByte (DigiShield Developers).
-static const int64_t nTargetTimespan = 60 ; // Tradercoin: every 1 minute
+static const int64_t nTargetTimespan = 60; // Tradercoin: every 1 minute
 static const int64_t nTargetSpacing = 60; // Tradercoin: 1 minute
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
