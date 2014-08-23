@@ -19,7 +19,7 @@ QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
     unitlist.append(MTRDR);
     unitlist.append(kTRDR);
     unitlist.append(TRDR);
-    unitlist.append(Fractoid);
+    unitlist.append(uTRDR);
     return unitlist;
 }
 
@@ -30,7 +30,7 @@ bool BitcoinUnits::valid(int unit)
     case MTRDR:
     case kTRDR:
     case TRDR:
-    case Fractoid:
+    case uTRDR:
         return true;
     default:
         return false;
@@ -44,7 +44,7 @@ QString BitcoinUnits::name(int unit)
     case MTRDR: return QString("MTRDR");
     case kTRDR: return QString("kTRDR");
     case TRDR: return QString("TRDR");
-    case Fractoid: return QString("Fractoid");
+    case uTRDR: return QString("uTRDR");
     default: return QString("???");
     }
 }
@@ -56,7 +56,7 @@ QString BitcoinUnits::description(int unit)
     case MTRDR: return QString("Mega-Tradercoin (1,000,000 TRDR)");
     case kTRDR: return QString("Kilo-Tradercoin (1000 TRDR)");
     case TRDR: return QString("Tradercoin");
-    case Fractoid: return QString("Fractoid (1 / 100,000,000");
+    case uTRDR: return QString("uTRDR (1 / 100,000,000");
     default: return QString("???");
     }
 }
@@ -68,7 +68,7 @@ qint64 BitcoinUnits::factor(int unit)
     case MTRDR: return Q_INT64_C(100000000000000);
     case kTRDR: return Q_INT64_C(100000000000);
     case TRDR:  return Q_INT64_C(100000000);
-    case Fractoid: return Q_INT64_C(1);
+    case uTRDR: return Q_INT64_C(1);
     default:    return Q_INT64_C(100000000);
     }
 }
@@ -80,7 +80,7 @@ qint64 BitcoinUnits::maxAmount(int unit)
     case MTRDR: return Q_INT64_C(900000);
     case kTRDR: return Q_INT64_C(900000000);
     case TRDR:  return Q_INT64_C(900000000000);    //less than the coin supply until the year 2170
-    case Fractoid: return Q_INT64_C(9000000000000000000); // Slightly under max value for int64
+    case uTRDR: return Q_INT64_C(9000000000000000000); // Slightly under max value for int64
     default:   return 0;
     }
 }
@@ -92,7 +92,7 @@ int BitcoinUnits::amountDigits(int unit)
     case MTRDR: return 6;  // 900,000 (# digits, without commas)
     case kTRDR: return 9;  // 900,000,000
     case TRDR:  return 12; // 900,000,000,000
-    case Fractoid: return 19; // 9,000,000,000,000,000,000
+    case uTRDR: return 19; // 9,000,000,000,000,000,000
     default: return 0;
     }
 }
@@ -104,7 +104,7 @@ int BitcoinUnits::decimals(int unit)
     case MTRDR: return 14;
     case kTRDR: return 11;
     case TRDR: return 8;
-    case Fractoid: return 0;
+    case uTRDR: return 0;
     default: return 0;
     }
 }

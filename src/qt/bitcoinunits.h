@@ -26,10 +26,10 @@ public:
     {
         TRDR,
         //formerly mTRDR
-        //formerly Fractoid
+        //formerly uTRDR
         MTRDR = 3,
         kTRDR = 4,
-        Fractoid = 5
+        uTRDR = 5
     };
 
     //! @name Static API
