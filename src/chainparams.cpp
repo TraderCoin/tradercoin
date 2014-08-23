@@ -105,7 +105,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
 
-        vSeeds.push_back(CDNSSeedData("seed1.tradercoin.net", "seed1.tradercoin.net"));
+        vSeeds.push_back(CDNSSeedData("74.207.225.111", "74.207.225.111"));
 
 
         // Workaround for Boost not being quite compatible with C++11;
